@@ -20,9 +20,9 @@ app.configure 'production', ->
   app.use express.errorHandler()
 
 controllers = [
-  'accounts'
-  'messages'
-  'contacts'
+  'account'
+  'message'
+  'contact'
 ]
 
 controllers.map (controller_name) ->
