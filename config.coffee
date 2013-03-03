@@ -5,8 +5,9 @@ environment = process.env.NODE_ENV or 'development'
 exports.port = process.env.NODE_ENV or 3000
 
 exports.dirs = 
-  assets : path.join __dirname, 'assets'
-  views  : path.join __dirname, 'app/views'
+  assets        : path.join __dirname, 'assets'
+  views         : path.join __dirname, 'app/views'
+  controllers   : path.join __dirname, 'app/controllers'
 
 exports.environment =
   production    : false

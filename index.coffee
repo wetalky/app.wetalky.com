@@ -19,8 +19,15 @@ app.configure 'development', ->
 app.configure 'production', ->
   app.use express.errorHandler()
 
-app.get '/', (req, res) ->
-  res.send 'Hello World'
+controllers = [
+  'accounts'
+  'messages'
+  'contacts'
+]
+
+controllers.map (controller_name) ->
+  controller = require config.dirs.controllers + '/' + controller_name
+  controller.setup app
 
 app.listen config.port, ->
   console.log 'Listening on %s:%s', config.domain, config.port 
