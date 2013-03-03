@@ -1,0 +1,46 @@
+doctype
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8
+//if IE 8
+  html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+  //<![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    
+    title= title    
+    
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css')
+    link(rel='stylesheet', href='/stylesheets/application.css')
+  body
+    div.navbar
+      div.navbar-inner
+        a.brand(href='#')='name'
+          
+        ul.nav
+          li
+            a(href="#")='link'
+          li
+            a(href="#")='link'
+              Link
+          li
+            a(href="#")='link'
+              Link
+
+    block content
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script
+      window.jQuery || document.write('<script src="/javascripts/vendor/jquery-1.9.1.min.js"><\\/script>')
+    script(src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js')
+    script
+      window.jQuery || document.write('<script src="/javascripts/vendor/bootstrap-2.3.1.min.js"><\\/script>')
+    script(src='/javascripts/plugins.js')
+    script(src='/javascripts/application.js')
