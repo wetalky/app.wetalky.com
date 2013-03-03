@@ -20,6 +20,7 @@ app.configure 'production', ->
   app.use express.errorHandler()
 
 controllers = [
+  'dashboard'
   'account'
   'message'
   'contact'
