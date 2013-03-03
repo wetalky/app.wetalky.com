@@ -4,7 +4,7 @@ app     = express()
 
 app.configure ->
   app.set 'views', config.dirs.views
-  app.set 'view engine', 'ejs'
+  app.set 'view engine', 'jade'
   app.use express.favicon()
   app.use express.logger(config.logs)
   app.use express.bodyParser()

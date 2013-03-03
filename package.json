@@ -7,7 +7,7 @@
     },
     "dependencies": {
         "express": "*",
-        "ejs": "*",
+        "jade": "*",
         "coffee-script": "*",
         "underscore": "*"
     }
